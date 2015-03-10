@@ -15,32 +15,35 @@ Build local directories, business listings, Yellow-Pages directories and much mo
 WP Business Directory Plugin lets you create Fast, easy directories for any business site.WP Business Directory lets you create directories at your site. Charge people for listing their businesses in your directory and secure an additional source of earning. Business Directory Plugin allows you to build local directories, business provider listings, Yellow-Pages style business directories, Yelp-like review sections, create a church directory, build an address book and much more. You can add any kind of directory using Business Directory plugin.
 
 <b> Features included <b>
-
-Free listings
-Users can post/edit listings without access to WP dashboard
-Configurable quick-search field and sorting bar for listings
-Display the location of the business
-Allow users to upload images
-Allow users to upload attachments on listings (supports PDF, Text files, images)
-Google Map
-Pagination
-Search Result
-Category Listing
-Comment to listing
-Send Message to listing owner
-Social Media icon
-Upload Logo
-Admin can add new category
-Listing Analysis(Graphs,Tables etc)
-Inline help
+<ul>
+<li>Free listings</li>
+<li>Users can post/edit listings without access to WP dashboard</li>
+<li>Configurable quick-search field and sorting bar for listings</li>
+<li>Display the location of the business</li>
+<li>Allow users to upload images</li>
+<li>Allow users to upload attachments on listings (supports PDF, Text files, images)</li>
+<li>Google Map</li>
+<li>Pagination</li>
+<li>Search Result</li>
+<li>Category Listing</li>
+<li>Comment to listing</li>
+<li>Send Message to listing owner</li>
+<li>Social Media icon</li>
+<li>Upload Logo</li>
+<li>Admin can add new category</li>
+<li>Listing Analysis(Graphs,Tables etc)</li>
+<li>Inline help</li>
+</ul>
 
 <b> Pro Features<b>
-Paid Listing
-Featured Listing
-PayPal integration
-Rating to listing
-Membership Level(Create multiple fee plans)
-World Class Support 
+<ul>
+<li>Paid Listing</li>
+<li>Featured Listing</li>
+<li>PayPal integration</li>
+<li>Rating to listing</li>
+<li>Membership Level(Create multiple fee plans)</li>
+<li>World Class Support </li>
+</ul>
 <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/">More Features</a>.
 
 Few of the Key Features :
