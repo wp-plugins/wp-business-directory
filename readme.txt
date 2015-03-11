@@ -8,8 +8,8 @@ Requires at least: 4.1+
 Tested up to: 4.1
 Stable tag: trunk
 
-Build local directories, business listings, Yellow-Pages directories and much more!
-
+WP Business Directory lets you Build local directories, business listings, Yellow-Pages directories and much more!
+Charge people for listing their businesses in your directory and secure an additional source of earning.
 == Description ==
 
 WP Business Directory Plugin lets you create Fast, easy directories for any business site.WP Business Directory lets you create directories at your site. Charge people for listing their businesses in your directory and secure an additional source of earning. Business Directory Plugin allows you to build local directories, business provider listings, Yellow-Pages style business directories, Yelp-like review sections, create a church directory, build an address book and much more. You can add any kind of directory using Business Directory plugin.
@@ -42,23 +42,29 @@ WP Business Directory Plugin lets you create Fast, easy directories for any busi
 <li>Featured Listing</li>
 <li>PayPal integration</li>
 <li>Rating to listing</li>
+<li>Let users post for free or charge per listing</li>
 <li>Membership Level(Create multiple fee plans)</li>
 <li>World Class Support </li>
 </ul>
-<a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/">More Features</a>.
 
 Few of the Key Features :
-1. Users can post/edit listings
-2. Google map
-3. Search listing
-4. Upload images, attachment to listing
-5. Pagination
+<ol>
+<li>Users can post/edit listings</li>
+<li>Google map</li>
+<li>Search listing</li>
+<li>Upload images, attachment to listing</li>
+<li>Pagination</li>
+</ol>
+<a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/" target="_blank">More Features</a>.
+<a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/documentation/" target="_blank">Documentation</a>.
+<a href="http://sahyadriwebsolution.com/wpbusinessdirectorydemo/" target="_blank">Demo</a>.
+<a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/membership-account/" target="_blank">Pro Features/Membership</a>.
 
 == Installation ==
 1. Download the plugin file, unzip and place it in your wp-content/plugins/ folder. You can alternatively upload it via the WordPress plugin backend.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. WP Business Directroy Plugin menu will appear in Dashboard. Click on it & get started to use.
-4. Refer to the for <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/documentation/">More Information</a>.
+4. Refer to the for <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/documentation/" target="_blank">More Information</a>.
 
 == Screenshots ==
 1. screenshot-2.png
@@ -67,7 +73,7 @@ Few of the Key Features :
 4. screenshot-4.png
 5. screenshot-5.png
 6. screenshot-6.png
-Refer to the for <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/documentation/">Screenshots and More Information</a>.
+Refer to the for <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/documentation/" target="_blank">Screenshots and More Information</a>.
 
 == Changelog ==
 
@@ -97,4 +103,4 @@ Refer to the for <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplug
 Base version of the plugin. 
 
 == Official Site ==
-For <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/">More Information</a> Or Advanced feature drop mail: sahyadriwebsolution@gmail.com 
+For <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/ target="_blank"">More Information</a> Or Advanced feature drop mail: sahyadriwebsolution@gmail.com 
