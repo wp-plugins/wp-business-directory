@@ -33,6 +33,7 @@ WP Business Directory Plugin lets you create Fast, easy directories for any busi
 <li>Admin can add new category</li>
 <li>Listing Analysis(Graphs,Tables etc)</li>
 <li>Inline help</li>
+<li>Working on multisite</li>
 </ul>
 
 <b> Pro Features<b>
