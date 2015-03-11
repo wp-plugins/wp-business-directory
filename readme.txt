@@ -57,10 +57,16 @@ Few of the Key Features :
 1. Download the plugin file, unzip and place it in your wp-content/plugins/ folder. You can alternatively upload it via the WordPress plugin backend.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. WP Business Directroy Plugin menu will appear in Dashboard. Click on it & get started to use.
-4. Refer to the for <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/">More Information</a>.
+4. Refer to the for <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/documentation/">More Information</a>.
 
 == Screenshots ==
-Refer to the for <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/">Screenshots and More Information</a>.
+1. screenshot-2.png
+2. screenshot-1.png
+3. screenshot-3.png
+4. screenshot-4.png
+5. screenshot-5.png
+6. screenshot-6.png
+Refer to the for <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/documentation/">Screenshots and More Information</a>.
 
 == Changelog ==
 
