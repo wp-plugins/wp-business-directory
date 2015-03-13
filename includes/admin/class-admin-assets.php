@@ -170,6 +170,12 @@ function check_for_shortcode($posts) {
                 
                 wp_enqueue_style('sadmin',WPBDP_PLUGIN_URL."assets/css/sb-admin-2.css" );
                 wp_enqueue_style('sadmin');  
+
+				wp_enqueue_script('wpbdleaflet',WPBDP_PLUGIN_URL."assets/map/leaflet.js" );
+                wp_enqueue_script('wpbdleaflet');
+                
+                wp_enqueue_style('wpbdcssleaflet',WPBDP_PLUGIN_URL."assets/map/leaflet.css" );
+                wp_enqueue_style('wpbdcssleaflet');
     }
     return $posts;
 }

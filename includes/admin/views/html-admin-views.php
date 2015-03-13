@@ -1,6 +1,11 @@
    <div class="row">
         <div class="col-lg-12">
-       
+        <div class="col-xs-12"><a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/membership-account/membership-levels/" title="Pro Features" target="_blank">
+                                      <h4><span class="label label-success">
+                                              <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Pro Features
+                                      </span></h4>
+                </a>
+            </div> 
            <?php //listing status chart
 		global $wpdb;
                 $overview_html="";

@@ -29,46 +29,20 @@
                                 width: 70%;
                             }</style><div class="col-md-12 odd gradeX">';
  if(get_option('wpblp_show_map')==1 && (!empty($listing->lat)) && (!empty($listing->glong))){
-		       $return.=' 
-                                <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
-                                   <script type="text/javascript">
-                                $(document).ready(function () {
-                                // Define the latitude and longitude positions
+                       $return.='<div class="col-md-12"><div id="map" class="map" style="height: 300px"></div><hr></div> ';
+                    
+		      $return.="<script>
+                                    var osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                                            osmAttrib = '&copy; <a href=\"http://openstreetmap.org/copyright\">OpenStreetMap</a> contributors',
+                                            osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: osmAttrib});
 
-                                var latitude = parseFloat("'.$listing->lat.'"); // Latitude get from above variable
-                                var longitude = parseFloat("'.$listing->glong.'"); // Longitude from same
+                                    var map = L.map('map').setView([$listing->lat, $listing->glong], 15).addLayer(osm);
 
-                                    var newlatitude=document.getElementById("latitude").value;
-                                    if(newlatitude!=""){
-                                        latitude=newlatitude;
-                                    }
-
-                                var latlngPos = new google.maps.LatLng(latitude, longitude);
-                                // Set up options for the Google map
-                                var myOptions = {
-                                zoom: 10,
-                                center: latlngPos,
-                                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                                zoomControlOptions: true,
-                                zoomControlOptions: {
-                                style: google.maps.ZoomControlStyle.LARGE
-                                }
-                                };
-                                // Define the map
-                                map = new google.maps.Map(document.getElementById("map"), myOptions);
-                                // Add the marker
-                                var marker = new google.maps.Marker({
-                                position: latlngPos,
-                                map: map,
-                                title: "'.$listing->business_name.'"
-                                });
-                                });
-                                </script>
-                                <div class="col-md-12">
-                                <div id="map" style="max-width:850px; width:100%;height:250px; margin-top:10px;"></div>
-                                <input style="display:none" type="text" onchange="latitude()" name="latitude" id="latitude">
-                                <input style="display:none" type="text" name="longitude" id="longitude">
-                                </div>';
+                                    L.marker([$listing->lat, $listing->glong])
+                                            .addTo(map)
+                                            .bindPopup('$listing->business_name.')
+                                            .openPopup();
+                            </script>";
                       }
                        $return.='<div class="col-md-9">';
                        if(!empty($listing->business_name)){
@@ -411,6 +385,7 @@ h4 {
                        if(!empty($listing->linkedin)){
                          $return.=' <a href="'.$listing->linkedin.'" target="_blank" class="btn btn-social-icon btn-linkedin"><i class="fa fa-linkedin"></i></a>';
                        }
+                         $return.='<br><a href="'.$permalink.$listing->id.'"><span class="label label-default">View</span></a>';
                     $return.='</td>';
                        $logoImage="";
                        $path_info = wp_upload_dir();	
