@@ -42,7 +42,7 @@ WP Business Directory Plugin lets you create Fast, easy directories for any busi
 <li>Featured Listing</li>
 <li>PayPal integration</li>
 <li>Rating to listing</li>
-<li>Shop map on top of all listing</li>
+<li>Show map on top of all listings</li>
 <li>Let users post for free or charge per listing</li>
 <li>Membership Level(Create multiple fee plans)</li>
 <li>World Class Support </li>
@@ -82,7 +82,7 @@ Refer to the for <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplug
 *Plugin Created
 
 = 1.0.1 = 
-*Changes in map
+*Changes in map <br>
 *Added view button in listing
 
 
