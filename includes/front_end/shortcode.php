@@ -1,5 +1,4 @@
 <?php
-
 add_shortcode( 'wp_business_directory', 'wp_business_directory' );
 add_shortcode( 'wp_business_directory_login', 'wp_business_directory_login' );
 add_shortcode( 'wp_business_directory_categories', 'wp_business_directory_categories' );
@@ -138,6 +137,3 @@ function wp_business_directory_submit_listing() {
     }
 	return $return;
 }
-?>
-
-

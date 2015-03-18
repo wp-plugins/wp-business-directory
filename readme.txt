@@ -8,8 +8,8 @@ Requires at least: 4.1+
 Tested up to: 4.1
 Stable tag: trunk
 
-WP Business Directory lets you Build local directories, business listings, Yellow-Pages directories and much more!
-Charge people for listing their businesses in your directory and secure an additional source of earning.
+WP Business Directory lets you Build local directories, business listings, Yellow-Pages directories and much more.
+ 
 == Description ==
 
 WP Business Directory Plugin lets you create Fast, easy directories for any business site.WP Business Directory lets you create directories at your site. Charge people for listing their businesses in your directory and secure an additional source of earning. Business Directory Plugin allows you to build local directories, business provider listings, Yellow-Pages style business directories, Yelp-like review sections, create a church directory, build an address book and much more. You can add any kind of directory using Business Directory plugin.
@@ -40,9 +40,11 @@ WP Business Directory Plugin lets you create Fast, easy directories for any busi
 <ul>
 <li>Paid Listing</li>
 <li>Featured Listing</li>
+<li>Search Widget</li>
+<li>Category Widget</li>
 <li>PayPal integration</li>
 <li>Rating to listing</li>
-<li>Show map on top of all listings</li>
+<li>Shop map on top of all listing</li>
 <li>Let users post for free or charge per listing</li>
 <li>Membership Level(Create multiple fee plans)</li>
 <li>World Class Support </li>
@@ -82,9 +84,12 @@ Refer to the for <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplug
 *Plugin Created
 
 = 1.0.1 = 
-*Changes in map <br>
+*Changes in map
 *Added view button in listing
 
+= 1.0.2 = 
+Released on 18.03.2015
+*fixed activating issue(headers already sent)
 
 == Frequently Asked Questions ==
 
@@ -105,8 +110,8 @@ Refer to the for <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplug
   
 == Upgrade Notice ==
 
-= 1.0.0 =
-Base version of the plugin. 
+= 1.0.2 =
+fixed activating issue(headers already sent)
 
 == Official Site ==
 For <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/ target="_blank"">More Information</a> Or Advanced feature drop mail: sahyadriwebsolution@gmail.com 

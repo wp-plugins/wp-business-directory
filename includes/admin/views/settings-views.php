@@ -499,9 +499,61 @@
                    <div class="col-xs-2">
                       <span class="label label-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
                    </div>
-      <!--22-->     
+       <!--23-->     
                    <div class="col-xs-1">
                       23
+                   </div>
+                   <div class="col-xs-7">
+                      Search Widget
+                   </div>
+                   <div class="col-xs-2">
+                        <span class="label label-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></span>
+                   </div>
+                   <div class="col-xs-2">
+                      <span class="label label-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+                   </div>
+       <!--24-->     
+                   <div class="col-xs-1">
+                      24
+                   </div>
+                   <div class="col-xs-7">
+                      Category Widget
+                   </div>
+                   <div class="col-xs-2">
+                        <span class="label label-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></span>
+                   </div>
+                   <div class="col-xs-2">
+                      <span class="label label-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+                   </div>
+       <!--25-->     
+                   <div class="col-xs-1">
+                      25
+                   </div>
+                   <div class="col-xs-7">
+                      Map Widget
+                   </div>
+                   <div class="col-xs-2">
+                        <span class="label label-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></span>
+                   </div>
+                   <div class="col-xs-2">
+                      <span class="label label-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+                   </div>
+       <!--26-->     
+                   <div class="col-xs-1">
+                      26
+                   </div>
+                   <div class="col-xs-7">
+                      Show Map on top of all listing
+                   </div>
+                   <div class="col-xs-2">
+                        <span class="label label-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></span>
+                   </div>
+                   <div class="col-xs-2">
+                      <span class="label label-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
+                   </div>
+      <!--27-->     
+                   <div class="col-xs-1">
+                      27
                    </div>
                    <div class="col-xs-7">
                       World Class Support
@@ -553,6 +605,11 @@
     </div>
             <div class="col-xs-12">
                 If you want any additional feature or any customization then drop mail us at sahyadriwebsolution@gmail.com 
+                <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/membership-account/membership-levels/" title="Pro Features" target="_blank">
+                                      <h4><span class="label label-success">
+                                              <span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Get Pro Features
+                                      </span></h4>
+                </a>
             </div>
     </div>
   </div>
@@ -636,7 +693,8 @@
                 <br>4.Under the search box, an info card with coordinates will appear.</p>
         </div>
         <div class="col-xs-12">
-                If you have any question then drop mail us at sahyadriwebsolution@gmail.com 
+                If you have any question then drop mail us at sahyadriwebsolution@gmail.com <br><br>
+                 <a href="sahyadriwebsolution.com/wpbusinessdirectoryplugin/documentation/" title="Documentation" target="_blank"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Documentation</a>
             </div>
      </div>
  </div>

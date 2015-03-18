@@ -351,7 +351,23 @@
                    
 			$sucssesMessage.="listing added successfully";
      		$errorFlag=2;
-                        wp_redirect($_SERVER['PHP_SELF']."?page=wpbdp-add-new-listing");
+                        //wp_redirect($_SERVER['PHP_SELF']."?page=wpbdp-add-new-listing");
+                        $_POST['nm']="";
+			$_POST['desc']="";
+			$_POST['lat']="";
+			$_POST['glong']="";
+			$_POST['addr']="";
+			$_POST['city']="";
+			$_POST['zip']="";
+			$_POST['web']="";
+			$_POST['phno']="";
+			$_POST['email']="";
+			$_POST['FB']="";
+			$_POST['Twiiter']="";
+			$_POST['linkedin']="";
+			$_POST['GP']="";
+			$_POST['blog']="";
+			$_POST['special']="";
 			//unset($_POST);
 		}	
 		

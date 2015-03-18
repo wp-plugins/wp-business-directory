@@ -390,7 +390,7 @@
                             }
                     
                 }
-                      wp_redirect(get_permalink());
+                      @wp_redirect(get_permalink());
 			//unset($_POST);
 		}	
 		

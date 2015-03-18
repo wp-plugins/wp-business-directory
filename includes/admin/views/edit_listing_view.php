@@ -18,7 +18,7 @@
        
                 if(file_exists($removeAttachment)){                              
                     @unlink($removeAttachment);
-                    wp_redirect($_SERVER['PHP_SELF']."?page=wpbdp-edit-listing&edit_listing_id=$listing->id&edit=Edit");
+                    @wp_redirect(get_bloginfo('url')."?page=wpbdp-edit-listing&edit_listing_id=$listing->id&edit=Edit");
                 }
             }
             if($_GET['remove']=="logo"){                
@@ -28,7 +28,7 @@
                 if(file_exists($removelogoSmall)){                              
                     @unlink($removelogoSmall);
                     @unlink($removelogo);
-                    wp_redirect($_SERVER['PHP_SELF']."?page=wpbdp-edit-listing&edit_listing_id=$listing->id&edit=Edit");
+                    @wp_redirect(get_bloginfo('url')."?page=wpbdp-edit-listing&edit_listing_id=$listing->id&edit=Edit");
                 }
             }
             if($_GET['remove']=="image" && isset($_GET['image_id'])){ 
@@ -39,7 +39,7 @@
                 if(file_exists($removeImage)){                              
                     @unlink($removeImageSmall);
                     @unlink($removeImage);
-                    wp_redirect($_SERVER['PHP_SELF']."?page=wpbdp-edit-listing&edit_listing_id=$listing->id&edit=Edit");
+                    @wp_redirect(get_bloginfo('url')."?page=wpbdp-edit-listing&edit_listing_id=$listing->id&edit=Edit");
                 }
             }
         }
@@ -248,7 +248,7 @@
                                 $attachmentfile=$listing->attachment;
                                 if((!empty($listing->attachment)) && file_exists($attachment)){
                                      $attachmentpath = $path_info['baseurl'].'/wp_business_directory_plugin/file/'.$listing->attachment;
-                                     $attachmentRemovePath=$_SERVER['PHP_SELF']."?page=wpbdp-edit-listing&edit_listing_id=$listing->id&edit=Edit&remove=file";
+                                     $attachmentRemovePath=get_bloginfo('url')."?page=wpbdp-edit-listing&edit_listing_id=$listing->id&edit=Edit&remove=file";
                                     $attachmentfile="<div class='col-md-6'><a href='$attachmentpath' target='_blank'><span class='glyphicon glyphicon-pushpin' aria-hidden='true'></span> View Attachment</a></div>";
                                     $attachmentfile.="<div class='col-md-6'><a href='$attachmentRemovePath'><span style='color:red' class='glyphicon glyphicon-remove' aria-hidden='true'></span> Remove Attachment</a></div>";
                                     echo '<div class="col-md-12"><hr>'.$attachmentfile.'</div><hr>';
@@ -391,8 +391,8 @@
 <?php
 
         }else{
-            wp_redirect(get_permalink()."/wp-admin/admin.php?page=wpbdp-listing");
+            @wp_redirect(get_permalink()."/wp-admin/admin.php?page=wpbdp-listing");
         }
     }else{
-            wp_redirect(get_permalink()."/wp-admin/admin.php?page=wpbdp-listing");
+            @wp_redirect(get_permalink()."/wp-admin/admin.php?page=wpbdp-listing");
         } ?>

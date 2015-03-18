@@ -1,6 +1,5 @@
 <?php
-/*
-Plugin Name: WP Business Directory
+/* Plugin Name: WP Business Directory
 Plugin URI: http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/
 Description: Build local directories, business listings, Yellow-Pages directories and much more!
 Author: Sahyadri Web Solution
@@ -9,7 +8,6 @@ Version: 1.0.1
 Text Domain: wp-business-directory-plugin
 Domain Path: /lang
 */
-
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
@@ -40,8 +38,8 @@ final class WPBusinessListing {
 		
 		// Define constants
 		$this->define_constants();
-		add_action( 'plugins_loaded', array($this,'load_textdomain') );		
-		register_activation_hook( __FILE__, array($this,'installation') );
+                register_activation_hook( __FILE__, array($this,'installation') );
+		add_action( 'plugins_loaded', array($this,'load_textdomain') );	
 		$this->installation();
 		// Include required files		
 		$this->includes();

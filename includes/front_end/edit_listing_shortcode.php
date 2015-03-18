@@ -368,7 +368,7 @@
        
                 if(file_exists($removeAttachment)){                              
                     @unlink($removeAttachment);
-                    wp_redirect(get_permalink().$permalinksymbolt."edit_listing=edit_listing&edit_listing_id=$listing->id&edit=Edit");
+                    @wp_redirect(get_permalink().$permalinksymbolt."edit_listing=edit_listing&edit_listing_id=$listing->id&edit=Edit");
                 }
             }
             if($_GET['remove']=="logo"){                
@@ -378,7 +378,7 @@
                 if(file_exists($removelogoSmall)){                              
                     @unlink($removelogoSmall);
                     @unlink($removelogo);
-                    wp_redirect(get_permalink().$permalinksymbolt."edit_listing=edit_listing&edit_listing_id=$listing->id&edit=Edit");
+                    @wp_redirect(get_permalink().$permalinksymbolt."edit_listing=edit_listing&edit_listing_id=$listing->id&edit=Edit");
                 }
             }
             if($_GET['remove']=="image" && isset($_GET['image_id'])){ 
@@ -389,7 +389,7 @@
                 if(file_exists($removeImage)){                              
                     @unlink($removeImageSmall);
                     @unlink($removeImage);
-                    wp_redirect(get_permalink().$permalinksymbolt."edit_listing=edit_listing&edit_listing_id=$listing->id&edit=Edit");
+                    @wp_redirect(get_permalink().$permalinksymbolt."edit_listing=edit_listing&edit_listing_id=$listing->id&edit=Edit");
                 }
             }
         }
@@ -707,8 +707,8 @@ $return.='<style>
 })
  </script>';
         }else{
-            wp_redirect(get_permalink());
+            @wp_redirect(get_permalink());
         }
     }else{
-            wp_redirect(get_permalink());
+            @wp_redirect(get_permalink());
         } 

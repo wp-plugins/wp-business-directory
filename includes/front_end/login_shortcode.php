@@ -9,7 +9,7 @@ if ( isset( $_POST['login_submit'] ) ) {
 			$login_user = wp_signon( $creds, false );
 
 			if ( ! is_wp_error( $login_user ) ) {
-				wp_redirect(get_permalink());
+				@wp_redirect(get_permalink());
 			} elseif ( is_wp_error( $login_user ) ) {
 				$login_status = $login_user->get_error_message();
 			}
