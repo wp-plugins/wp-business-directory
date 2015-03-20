@@ -85,11 +85,15 @@ Refer to the for <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplug
 
 = 1.0.1 = 
 *Changes in map
-*Added view button in listing
+<br>*Added view button in listing
 
 = 1.0.2 = 
 Released on 18.03.2015
-*fixed activating issue(headers already sent)
+<br>*fixed activating issue(headers already sent)
+
+= 1.0.3 = 
+Released on 20.03.2015
+fixed issue(include settings-views.php)
 
 == Frequently Asked Questions ==
 
@@ -110,8 +114,8 @@ Released on 18.03.2015
   
 == Upgrade Notice ==
 
-= 1.0.2 =
-fixed activating issue(headers already sent)
+= 1.0.3 =
+fixed issue(include settings-views.php)
 
 == Official Site ==
 For <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/ target="_blank"">More Information</a> Or Advanced feature drop mail: sahyadriwebsolution@gmail.com 

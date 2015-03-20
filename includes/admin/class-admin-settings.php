@@ -75,10 +75,10 @@ include( 'modules/new_category-modules.php' );
      
     }
 
-	 static function Settings() {
+	 static function settings() {
       
        include( 'modules/settings_module.php' );
-       include( 'views/Settings-views.php' );
+       include( 'views/settings-views.php' );
      
     }
 
