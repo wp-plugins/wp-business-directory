@@ -34,14 +34,14 @@ WP Business Directory Plugin lets you create Fast, easy directories for any busi
 <li>Listing Analysis(Graphs,Tables etc)</li>
 <li>Inline help</li>
 <li>Working on multisite</li>
+<li>Search Widget</li>
+<li>Category Widget</li>
 </ul>
 
 <b> Pro Features<b>
 <ul>
 <li>Paid Listing</li>
 <li>Featured Listing</li>
-<li>Search Widget</li>
-<li>Category Widget</li>
 <li>PayPal integration</li>
 <li>Rating to listing</li>
 <li>Shop map on top of all listing</li>
@@ -95,6 +95,12 @@ Released on 18.03.2015
 Released on 20.03.2015
 fixed issue(include settings-views.php)
 
+= 1.0.3 = 
+Released on 24.03.2015
+<br>Added Search Widget
+<br>Added Category Widget
+<br>load minified css/jquery for incrrease site speed
+
 == Frequently Asked Questions ==
 
  Q-How to get latitude and longitude coordinates? 
@@ -114,8 +120,8 @@ fixed issue(include settings-views.php)
   
 == Upgrade Notice ==
 
-= 1.0.3 =
-fixed issue(include settings-views.php)
+= 1.0.4 =
+<br>Added Search And Category Widget
 
 == Official Site ==
 For <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/ target="_blank"">More Information</a> Or Advanced feature drop mail: sahyadriwebsolution@gmail.com 

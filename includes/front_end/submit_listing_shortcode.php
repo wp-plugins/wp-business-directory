@@ -659,5 +659,3 @@ $return.='</div> </div>
   $(\'[data-toggle="tooltip"]\').tooltip();
 })
  </script>';
- 
-

@@ -9,7 +9,7 @@
     }
     $sussesEmailFlag="";
     if(isset($_GET['list'])){
-        $return.='<div class="col-md-12"><a href="'.get_permalink().'"><button>Back to Listing</button></a></div>';
+        $return.='<div class="col-md-12"><a href="'.get_permalink().'"><button>Back to Listing</button></a><hr></div>';
         global $wpdb;
         $listId=$_GET['list'];
         $listings = $wpdb->get_results( "SELECT * FROM {$wpdb->prefix}wpbdp_listing where id=$listId");        
@@ -36,7 +36,7 @@
                                             osmAttrib = '&copy; <a href=\"http://openstreetmap.org/copyright\">OpenStreetMap</a> contributors',
                                             osm = L.tileLayer(osmUrl, {maxZoom: 18, attribution: osmAttrib});
 
-                                    var map = L.map('map').setView([$listing->lat, $listing->glong], 15).addLayer(osm);
+                                    var map = L.map('map').setView([$listing->lat, $listing->glong], 2).addLayer(osm);
 
                                     L.marker([$listing->lat, $listing->glong])
                                             .addTo(map)
@@ -285,13 +285,22 @@
 		} 	
 	
         $cid=$_GET['cid'];
-        $clistings = $wpdb->get_results("SELECT lc.category_name FROM  {$wpdb->prefix}wpbdp_listing as l , {$wpdb->prefix}wpbdp_listing_categories as c,{$wpdb->prefix}wpbdp_categories as lc WHERE c.cid=lc.cid AND l.id=c.listing_id AND lc.cid=$cid group BY c.cid $wpblp_categories_sort");       
-	
-        $listings = $wpdb->get_results("SELECT l.id, l.business_name, l.phone,l.address, l.website,l.blog, l.fb,l.tw, l.googleplus, l.linkedin, l.description, l.tags FROM {$wpdb->prefix}wpbdp_listing l,{$wpdb->prefix}wpbdp_listing_categories c WHERE l.id=c.listing_id AND c.cid=$cid AND l.is_active=1 AND l.status='Publish'" );         
-        $return.='<div class="col-md-12"><a href="'.get_permalink().'"><button><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> All Listings</button></a></div>';
-         foreach ($clistings as $clistings){
-            $return.='<div class="col-md-12"><h3>Category : '.$clistings->category_name.'<h3></div>';
+        
+	if($_GET['cid']=='all'){
+            $listings = $wpdb->get_results("SELECT * FROM {$wpdb->prefix}wpbdp_listing  WHERE is_active=1 AND status='Publish'");       
+        }else{
+            $clistings = $wpdb->get_results("SELECT lc.category_name FROM  {$wpdb->prefix}wpbdp_listing as l , {$wpdb->prefix}wpbdp_listing_categories as c,{$wpdb->prefix}wpbdp_categories as lc WHERE c.cid=lc.cid AND l.id=c.listing_id AND lc.cid=$cid group BY c.cid $wpblp_categories_sort");       
+            $listings = $wpdb->get_results("SELECT l.id, l.business_name, l.phone,l.address, l.website,l.blog, l.fb,l.tw, l.googleplus, l.linkedin, l.description, l.tags FROM {$wpdb->prefix}wpbdp_listing l,{$wpdb->prefix}wpbdp_listing_categories c WHERE l.id=c.listing_id AND c.cid=$cid AND l.is_active=1 AND l.status='Publish'" );         
+            $return.='<div class="col-md-12"><a href="'.get_permalink().'"><button><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> All Listings</button></a></div>';
+            foreach ($clistings as $clistings){
+             if(!($_GET['cid']=='all')){
+                 $return.='<div class="col-md-12"><h3>Category : '.$clistings->category_name.'<h3></div>';
+             }
          }
+       
+        }
+        
+         
     }else if(isset($_GET['search']) && $_GET['search']=="Search"){
         if(isset($_GET['what']) && !empty($_GET['what']))
          {

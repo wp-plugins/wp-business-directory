@@ -507,7 +507,7 @@
                       Search Widget
                    </div>
                    <div class="col-xs-2">
-                        <span class="label label-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></span>
+                        <span class="label label-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
                    </div>
                    <div class="col-xs-2">
                       <span class="label label-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
@@ -520,7 +520,7 @@
                       Category Widget
                    </div>
                    <div class="col-xs-2">
-                        <span class="label label-danger"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></span>
+                         <span class="label label-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>
                    </div>
                    <div class="col-xs-2">
                       <span class="label label-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></span>

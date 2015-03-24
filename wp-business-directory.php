@@ -4,7 +4,7 @@ Plugin URI: http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/
 Description: Build local directories, business listings, Yellow-Pages directories and much more!
 Author: Sahyadri Web Solution
 Author URI: http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/
-Version: 1.0.3
+Version: 1.0.4
 Text Domain: wp-business-directory-plugin
 Domain Path: /lang
 */
@@ -39,6 +39,7 @@ final class WPBusinessListing {
 		// Define constants
 		$this->define_constants();
                 register_activation_hook( __FILE__, array($this,'installation') );
+                register_activation_hook( __FILE__, array($this,'my_plugin_install_function'));
 		add_action( 'plugins_loaded', array($this,'load_textdomain') );	
 		$this->installation();
 		// Include required files		
@@ -47,7 +48,26 @@ final class WPBusinessListing {
 
 		
 	}
-	
+	function my_plugin_install_function()
+            {
+             //post status and options
+              $post = array(
+                    'comment_status' => 'closed',
+                    'ping_status' =>  'closed' ,
+                    'post_author' => 1,
+                    'post_date' => date('Y-m-d H:i:s'),
+                    'post_name' => 'Business Directory',
+                    'post_status' => 'publish' ,
+                    'post_title' => 'Business Directory',
+                             'post_content' => '[wp_business_directory]',
+                    'post_type' => 'page',
+              );  
+              //insert page and save the id
+              $newvalue = wp_insert_post( $post, false );
+              //save the id in the database
+              update_option( 'wp_business_directory_page', $newvalue );
+            }
+            
 	private function define_constants() {
 		define( 'WPBDP_PLUGIN_FILE', __FILE__ );
 	        define( 'WPBDP_PLUGIN_URL', plugin_dir_url( __FILE__ ) );    	
@@ -59,7 +79,7 @@ final class WPBusinessListing {
 	             include_once( 'includes/admin/class-admin-assets.php' );
 		     include_once( 'includes/admin/class-admin-settings.php' );  	
                      include_once( 'includes/front_end/shortcode.php' );  	
-		     //include_once( 'includes/front_end/widget.php' ); 
+		     include_once( 'includes/front_end/widget.php' ); 
 				 
 
 	}  
