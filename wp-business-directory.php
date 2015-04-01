@@ -4,7 +4,7 @@ Plugin URI: http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/
 Description: Build local directories, business listings, Yellow-Pages directories and much more!
 Author: Sahyadri Web Solution
 Author URI: http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/
-Version: 1.0.4
+Version: 1.0.5
 Text Domain: wp-business-directory-plugin
 Domain Path: /lang
 */

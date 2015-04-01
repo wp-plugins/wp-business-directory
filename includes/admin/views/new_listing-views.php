@@ -177,12 +177,7 @@
                                 maxlength: 100,
                                 fregx:/^[A-Za-z_ ]{1,20}$/
                                },                      
-                      
-                      
-                       phno:
-                               {                             
-                                phoneUS: true
-                               },                       
+                                             
                         web:{
                                 url: true                       
                              },

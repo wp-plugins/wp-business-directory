@@ -95,11 +95,15 @@ Released on 18.03.2015
 Released on 20.03.2015
 fixed issue(include settings-views.php)
 
-= 1.0.3 = 
+= 1.0.4 = 
 Released on 24.03.2015
 <br>Added Search Widget
 <br>Added Category Widget
 <br>load minified css/jquery for incrrease site speed
+
+= 1.0.5 =
+Released on 01.04.2015
+<br>Resolve phone number validation issue
 
 == Frequently Asked Questions ==
 
@@ -120,8 +124,8 @@ Released on 24.03.2015
   
 == Upgrade Notice ==
 
-= 1.0.4 =
-<br>Added Search And Category Widget
+= 1.0.5 =
+<br>Resolve phone number validation issue
 
 == Official Site ==
 For <a href="http://sahyadriwebsolution.com/wpbusinessdirectoryplugin/ target="_blank"">More Information</a> Or Advanced feature drop mail: sahyadriwebsolution@gmail.com 

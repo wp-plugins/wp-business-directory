@@ -644,10 +644,7 @@ $return.='<style>
                                },                      
                       
                       
-                       phno:
-                               {                             
-                                phoneUS: true
-                               },                       
+                                              
                         web:{
                                 url: true                       
                              },
